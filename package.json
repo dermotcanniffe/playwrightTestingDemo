@@ -1,0 +1,23 @@
+{
+  "name": "playwright-demo-tests",
+  "version": "1.0.0",
+  "description": "Playwright demo test suite for LIS application with Spira reporting",
+  "scripts": {
+    "test": "npx playwright test --project=chromium",
+    "test:demo": "npx playwright test --project=demo",
+    "test:navigation": "npx playwright test tests/navigation.spec.ts --project=chromium",
+    "test:navigation:demo": "npx playwright test tests/navigation.spec.ts --project=demo",
+    "test:search": "npx playwright test tests/search.spec.ts --project=chromium",
+    "test:search:demo": "npx playwright test tests/search.spec.ts --project=demo",
+    "test:login": "npx playwright test tests/login.spec.ts --project=chromium",
+    "test:login:demo": "npx playwright test tests/login.spec.ts --project=demo",
+    "install:browsers": "npx playwright install chromium",
+    "report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.49.1",
+    "@types/node": "^25.9.1",
+    "dotenv": "16.4.7",
+    "typescript": "5.7.2"
+  }
+}
